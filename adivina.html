@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Adivina</title>
+</head>
+<body>
+	<p>Adivina que numero estoy pensando del 1 al 10</p>
+	Digite el dato : <input type="text" id="dato">
+	<button id="boton">Resolver</button>
+	<script type="text/javascript">
+		var numero = Math.ceil(Math.random()*10);
+
+		document.getElementById("boton").addEventListener("click", function(){
+			var entrada = document.getElementById("dato").value;
+
+			if (entrada == numero) {
+				alert("En hora buena joder me cago en too lo que se menea tio!!!. \nhas adivinado joder con el : " + numero + "\npulsa Aceptar para volver a intentar");
+				location.reload();
+			}else {
+				alert("Lo siento tio pero no lo has logrado. \nEl numero era el : " + numero + "\npulsa Aceptar para volver a intentar. ");
+				location.reload();
+			}
+
+		}) 
+
+
+	</script>
+</body>
+</html>

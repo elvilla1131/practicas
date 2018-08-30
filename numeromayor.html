@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NumMayor</title>
+
+	<script type="text/javascript">
+		
+		var lista=new Array;
+		for(var i=0;i<10;i++){
+			lista[i]=parseInt(prompt("Digite un numero para agregar a la lista y determinar el numero mayor"));
+		} 
+		var mayor=lista[0];
+		var posicionmayor=0;
+		var contador =1;
+		while(contador<10){
+			if(lista[contador]>mayor){
+				mayor=lista[contador];
+				posicionmayor=contador;
+			}
+			contador++;
+		}
+		alert("El numero mayor es " +mayor+ " que se encuentra en la posicion "+posicionmayor);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

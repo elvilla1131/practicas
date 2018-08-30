@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+ 
+	<script>
+	function parImpar()
+	{
+		var valor=parseInt(document.getElementById("valor").value);
+		var tipo=(valor%2)?"Impar":"Par";
+		document.getElementById("resultado").innerHTML="El numero "+valor+" es "+tipo;
+		return false;
+	}
+	</script>
+</head>
+<body>
+ 
+<h4>Determinar si un valor es par o impar</h4>
+ 
+<form>
+	<input type="text" id="valor" value="" placeholder="introduce un valor numerico">
+	<input type="submit" onclick="return parImpar()" value="Par/Impar">
+</form>
+ 
+<div id="resultado"></div>
+ 
+</body>
+</html>
